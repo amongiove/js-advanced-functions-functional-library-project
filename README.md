@@ -1,4 +1,4 @@
-# JavaScript Advanced Functions: Build a JavaScript Functional Library
+<!-- # JavaScript Advanced Functions: Build a JavaScript Functional Library
 
 ## Introduction
 
@@ -60,11 +60,11 @@ Wrapping a library in code is sometimes called "[The Module Pattern][MP]"
 The point of this exercise is to build ***your own implementation*** of the
 collection-processing methods. Don't simply re-use the built-in methods!
 Leverage all you know about callbacks, passing data, etc. to prove that you
-could build your own collection-processing framework whenever ***you*** want.
+could build your own collection-processing framework whenever ***you*** want. -->
 
-## Collection Functions (Arrays or Objects)
+<!-- ## Collection Functions (Arrays or Objects) -->
 
-**fi.each**
+<!-- **fi.each**
 
 `fi.each(collection, callback)`
 
@@ -149,9 +149,9 @@ Return the number of values in the **collection**.
 ```javascript
 fi.size({one: 1, two: 2, three: 3});
 => 3
-```
+``` -->
 
-## Array Functions
+<!-- ## Array Functions
 
 **fi.first**
 
@@ -213,7 +213,7 @@ fi.sortBy([1, 2, 3, 4, 5, 6], function(num){ return Math.sin(num) });
 var stooges = [{name: 'moe', age: 40}, {name: 'larry', age: 50}, {name: 'curly', age: 60}];
 fi.sortBy(stooges, function(stooge){ return stooge.name });
 => [{name: 'curly', age: 60}, {name: 'larry', age: 50}, {name: 'moe', age: 40}];
-```
+``` -->
 
 **fi.flatten (bonus function)**
 
@@ -230,7 +230,7 @@ fi.flatten([1, [2], [3, [[4]]]], true);
 => [1, 2, 3, [[4]]];
 ```
 
-**fi.uniq**
+<!-- **fi.uniq**
 
 `fi.uniq(array, [isSorted], [callback])`
 
@@ -238,10 +238,10 @@ Produces a duplicate-free version of the **array**, using _===_ to test object e
 
 ```javascript
 fi.uniq([1, 2, 1, 4, 1, 3]);
-=> [1, 2, 4, 3]
+=> [1, 2, 4, 3] -->
 ```
 
-If you know in advance that the **array** is sorted, passing _true_ for **isSorted** will run a much faster algorithm. 
+<!-- If you know in advance that the **array** is sorted, passing _true_ for **isSorted** will run a much faster algorithm. 
 
 ```javascript
 fi.uniq(['a', 'a', 'b', 'c', 'e', 'e', 'e', 'e'], true)
@@ -261,9 +261,9 @@ fi.uniq([4,8,6,5,7], false, (x => x % 3));
 
 ## Function
 
-## Object Functions
+## Object Functions -->
 
-**fi.keys**
+<!-- **fi.keys**
 
 `fi.keys(object)`
 
@@ -282,9 +282,9 @@ Return all of the values of the **object**'s own properties.
 ```javascript
 fi.values({one: 1, two: 2, three: 3});
 => [1, 2, 3]
-```
+``` -->
 
-**fi.functions**
+<!-- **fi.functions**
 
 `fi.functions(object)`
 
@@ -293,7 +293,7 @@ Returns a sorted collection of the names of every function in an object — that
 ```javascript
 fi.functions(fi);
 => ["compact", "each", "filter", "find", "first", "functions", "last", "map", "reduce", "size", "sortBy"]
-```
+``` -->
 
 ## Conclusion
 
